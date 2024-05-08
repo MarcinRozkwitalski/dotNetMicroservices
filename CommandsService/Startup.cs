@@ -27,15 +27,9 @@ namespace CommandsService
         
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMen"));
-            // services.AddScoped<ICommandRepo, CommandRepo>();
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            // services.AddHostedService<MessageBusSubscriber>();
-
-            // services.AddSingleton<IEventProcessor, EventProcessor>(); 
-            // services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            // services.AddScoped<IPlatformDataClient, PlatformDataClient>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CommandsService", Version = "v1" });
