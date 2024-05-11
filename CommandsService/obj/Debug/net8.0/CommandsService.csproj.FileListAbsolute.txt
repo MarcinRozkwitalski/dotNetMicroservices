@@ -105,3 +105,5 @@ D:\Projects\Microservices\CommandsService\obj\Debug\net8.0\refint\CommandsServic
 D:\Projects\Microservices\CommandsService\obj\Debug\net8.0\CommandsService.pdb
 D:\Projects\Microservices\CommandsService\obj\Debug\net8.0\CommandsService.genruntimeconfig.cache
 D:\Projects\Microservices\CommandsService\obj\Debug\net8.0\ref\CommandsService.dll
+D:\Projects\Microservices\CommandsService\bin\Debug\net8.0\appsettings.Production.json
+D:\Projects\Microservices\CommandsService\bin\Debug\net8.0\RabbitMQ.Client.dll
