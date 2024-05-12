@@ -34,7 +34,7 @@ namespace CommandsService
             services.AddScoped<ICommandRepo, CommandRepo>();
             services.AddControllers();
 
-            services.AddSingleton<MessageBusSubscriber>();
+            services.AddHostedService<MessageBusSubscriber>();
 
             services.AddSingleton<IEventProcessor, EventProcessor>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
