@@ -16,7 +16,7 @@ spec:
         - name: rabbitmq
           image: rabbitmq:3-management
           ports:
-            - containerPort: 15671
+            - containerPort: 15672
               name: rbmq-mgmt-port
             - containerPort: 5672
               name: rbmq-msg-port
@@ -32,8 +32,8 @@ spec:
   ports:
   - name: rbmq-mgmt-port
     protocol: TCP
-    port: 15671
-    targetPort: 15671
+    port: 15672
+    targetPort: 15672
   - name: rbmq-msg-port
     protocol: TCP
     port: 5672
@@ -50,8 +50,8 @@ spec:
   ports:
   - name: rbmq-mgmt-port
     protocol: TCP
-    port: 15671
-    targetPort: 15671
+    port: 15672
+    targetPort: 15672
   - name: rbmq-msg-port
     protocol: TCP
     port: 5672
